@@ -22,11 +22,10 @@
     </div>
   </header>
 
-  <ul class="accordion">
-    <li>
-      <input type="checkbox" id="first-1">
-      <label for="first-1">Article</label>
-      <div class="content">
+  <main>
+    <div class="dropdown">
+      <input type="text" class="textBox" placeholder="ARTICLE" readonly>
+      <div class="options">
         <a href="https://www.analyticsvidhya.com/blog/2024/05/multimodal-search-image-application/">Multimodal Search
           Image Application with Titan Embedding</a>
         <a href="https://www.analyticsvidhya.com/blog/2024/04/flask-application-dockerization-creating-a-docker-image/">Flask
@@ -40,28 +39,33 @@
         <a href="https://www.analyticsvidhya.com/blog/2024/03/how-to-deploy-a-machine-learning-model-using-flask/">How
           to Deploy a Machine Learning Model using Flask?</a>
       </div>
-    </li>
-  </ul>
+    </div>
 
-  <ul class="accordion">
-    <li>
-      <input type="checkbox" id="first-2">
-      <label for="first-2">Coming Soon</label>
-      <div class="content">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
+    <div class="dropdown">
+      <input type="text" class="textBox" placeholder="COMING SOON" readonly>
+      <div class="options">
+        <a href="#">COMING SOON</a>
+        <a href="#">COMING SOON</a>
+        <a href="#">COMING SOON</a>
+        <a href="#">COMING SOON</a>
+        <a href="#">COMING SOON</a>
+        <a href="#">COMING SOON</a>
       </div>
-    </li>
-  </ul>
+    </div>
+  </main>
 
   <footer>
-    <p>Footer section</p>
+    <div class="footer-container">
+      <p>Contact us: </p>
+      <ul>
+        <li>Email: contact@llmops.com</li>
+        <li>Phone: +1-234-567-890</li>
+        <li>Address: 1234 LLMOPS St, AI City, Techland</li>
+      </ul>
+    </div>
   </footer>
 
+  <script src="https://kit.fontawesome.com/9c69297452.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 
