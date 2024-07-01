@@ -28,14 +28,27 @@ header {
   padding-bottom: 20px;
 }
 
-.header-container .logo h1 {
-  color: white;
+.header-container {
+  height: 55px;
 }
+
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.logo-img {
+  width: 50px;
+  /* Adjust the size as needed */
+  height: auto;
+}
+
 
 .header-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding: 20px;
   z-index: 10;
@@ -71,7 +84,8 @@ header {
 #accordion li {
   list-style: none;
   margin-bottom: 10px;
-  background-color: #fff;
+  background-color: #dcd9d4;
+  box-shadow: 2.5px 2.5px 10px #000000;
   padding: 10px;
   border-radius: 4px;
 }
