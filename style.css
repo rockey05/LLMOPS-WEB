@@ -9,15 +9,19 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #1a1a1a;
+  background: #ffffff;
+  /* White background */
   overflow-x: hidden;
-  font-family: 'Caviar Dreams', sans-serif;
-  color: #f0f0f0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333333;
+  /* Darker text color for contrast */
+  /* Removed padding-top */
 }
 
 a {
   text-decoration: none;
-  color: #00ccff;
+  color: #007bff;
+  /* Primary link color */
 }
 
 header {
@@ -26,17 +30,21 @@ header {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
-  background: #333333;
+  background: #dbdbdb;
+  /* Blue header background */
+  color: #ffffff;
+  /* White text for contrast */
 }
 
 .header-container {
   width: 100%;
-  height: 55px;
+  height: 60px;
   display: flex;
   justify-content: left;
   align-items: center;
   padding: 20px;
   z-index: 10;
+  margin-top: 0;
 }
 
 .logo {
@@ -54,7 +62,7 @@ header {
   width: 100%;
   height: 50vh;
   position: relative;
-  background-color: #444444;
+  background-color: #e9ecef;
   margin-bottom: 20px;
 }
 
@@ -73,7 +81,6 @@ header {
 
 #accordion {
   margin: 20px 0 10px 0;
-  /* Reduced bottom margin */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -91,8 +98,10 @@ header {
 
 #accordion li {
   margin: 10px;
-  background-color: #222222;
-  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  /* White item background */
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
   border-radius: 4px;
   width: 200px;
   height: 100px;
@@ -103,6 +112,8 @@ header {
   position: relative;
   transition: all 0.3s ease;
   overflow: visible;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* 3D shadow effect */
 }
 
 #accordion li:hover {
@@ -119,8 +130,10 @@ header {
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
-  background-color: #555555;
-  color: #ffcc00;
+  background-color: #007bff;
+  /* Blue header */
+  color: #ffffff;
+  /* White text for contrast */
 }
 
 .content {
@@ -135,8 +148,11 @@ header {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #333333;
+  background-color: #ffffff;
+  /* White content background */
   z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* 3D shadow effect */
 }
 
 #accordion li:hover .content {
@@ -152,24 +168,34 @@ header {
   margin-bottom: 5px;
   padding: 8px;
   border-radius: 4px;
-  transition: background-color 0.3s;
-  background-color: #555555;
-  color: #f0f0f0;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: #e9ecef;
+  /* Light grey link background */
+  color: #007bff;
+  /* Blue text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* 3D shadow effect */
 }
 
 .content a:hover {
-  background: #ffcc00;
-  color: #1a1a1a;
+  background: #007bff;
+  /* Blue hover background */
+  color: #ffffff;
+  /* White text for contrast */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 16px 32px rgba(0, 0, 0, 0.1);
+  /* Enhanced 3D shadow effect */
 }
 
 footer {
-  color: #f0f0f0;
+  color: #333333;
   padding: 10px 20px 20px 20px;
-  /* Reduced top padding */
   text-align: center;
   width: 100%;
   margin-top: auto;
-  background-color: #222222;
+  background-color: #f9f8f8;
+  /* Blue footer background */
+  color: black;
+  /* White text for contrast */
 }
 
 .footer-logo {
@@ -279,7 +305,6 @@ footer {
 
   .content {
     top: 100%;
-    /* position: relative; */
     height: auto;
     width: auto;
     align-items: center;
