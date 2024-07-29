@@ -1,3 +1,6 @@
+/* General Reset and Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Libre+Barcode+128+Text&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #f0f2f5;
+  background: #ffffff;
   font-family: 'LemonMilkBold', Arial, Helvetica, sans-serif;
   color: #333333;
   perspective: 1000px;
@@ -34,7 +37,7 @@ a {
   color: #007bff;
 }
 
-
+/* Header Styles */
 header {
   width: 100%;
   display: flex;
@@ -56,12 +59,23 @@ header {
   margin-right: 4rem;
 }
 
+.footer-logo-container {
+  margin-right: auto;
+}
+
+.footer-logo {
+  max-width: 400px;
+}
+
 #video-container {
   width: 100%;
   height: 60vh;
   position: relative;
   background-color: #e9ecef;
   margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
+    0 16px 32px rgba(0, 0, 0, 0.3),
+    0 24px 48px rgba(0, 0, 0, 0.2);
 }
 
 .banner {
@@ -75,13 +89,16 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+/* Content Styles */
 .content-container {
   margin-top: 1.5rem;
   padding: 20px;
   text-align: left;
   background-color: #1A181B;
+  width: 100%;
 }
 
 .abttitle {
@@ -97,7 +114,7 @@ header {
 }
 
 #row0 {
-  font-size: 25px;
+  font-size: 30px;
   bottom: 20px;
   color: white;
   font-weight: 700;
@@ -111,7 +128,11 @@ header {
 .abtinfo {
   text-align: center;
   line-height: 1.5;
-  font-family: 'LemonMilk', Arial, Helvetica, sans-serif;
+  font-family: Outfit;
+}
+
+#row1 {
+  font-size: 27px;
 }
 
 .abtinfo p {
@@ -120,7 +141,6 @@ header {
   font-size: 16px;
   margin-bottom: -50px;
   clip-path: inset(0% 0% 0% 0%);
-  opacity: 0.7;
   color: white;
 }
 
@@ -133,14 +153,17 @@ header {
   transition: all 1s cubic-bezier(.4, 0, .2, 1);
 }
 
+.abtinfo .row3 {
+  margin-top: 40px;
+}
 
+/* Card Container */
 #card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 10px;
-  transform-style: preserve-3d;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 20px;
 }
 
 .card {
@@ -148,7 +171,6 @@ header {
   background-position: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin: 20px;
   width: 350px;
   height: 600px;
   overflow: hidden;
@@ -159,6 +181,7 @@ header {
   animation: slideUp3D 1.5s ease-out forwards;
   animation-delay: 0.5s;
   font-family: 'LemonMilk', Arial, Helvetica, sans-serif;
+  margin: 10px;
 }
 
 @keyframes slideUp3D {
@@ -185,6 +208,13 @@ header {
   transform: translate(-50%, -50%);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.562);
+  font-size: 18px;
+  width: 100%;
+}
+
+.card-header h1 {
+  font-size: 20px;
 }
 
 .card-content {
@@ -197,7 +227,6 @@ header {
   margin-top: 60px;
 }
 
-/* Hide scrollbar */
 .card-content::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -226,11 +255,8 @@ header {
 
 .navigate-btn {
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   padding: 8px 12px;
   background-color: #007bff;
   color: white;
@@ -238,7 +264,6 @@ header {
   transition: background-color 0.3s;
   flex: 0 0 auto;
   height: auto;
-
 }
 
 .navigate-btn:hover {
@@ -253,56 +278,92 @@ header {
   text-align: center;
   line-height: 1.5;
   background-color: white;
-
-
 }
 
-
 .card:nth-child(1) {
-  background-image: url('Firefly\ generative\ artificial\ intelligence\ 7699.jpg');
+  background-image: url('Firefly generative artificial intelligence 7699.jpg');
   background-color: #1A181B;
 }
 
 .card:nth-child(1):hover {
   transform: scale(1.05) rotateY(10deg) rotateX(10deg);
-  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.1), 0 20px 40px rgba(255, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
+    0 16px 32px rgba(0, 0, 0, 0.3),
+    0 24px 48px rgba(0, 0, 0, 0.2);
 }
 
 .card:nth-child(2) {
-  background-image: url('Firefly\ python\ programming\ developer\ code;\ computer\ network\ security\ concept;\ tablet\ display\ 29566.jpg');
+  background-image: url('Firefly python programming developer code; computer network security concept; tablet display 29566.jpg');
   background-color: #1A181B;
 }
 
 .card:nth-child(2):hover {
   transform: scale(1.05) rotateY(-10deg) rotateX(10deg);
-  box-shadow: 0 10px 20px rgba(0, 255, 0, 0.1), 0 20px 40px rgba(0, 255, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
+    0 16px 32px rgba(0, 0, 0, 0.3),
+    0 24px 48px rgba(0, 0, 0, 0.2);
 }
 
 .card:nth-child(3) {
-  background-image: url('Firefly\ Global\ information\ tracker\ git\ 29566.jpg');
+  background-image: url('Firefly Global information tracker git 29566.jpg');
   background-color: #1A181B;
 }
 
 .card:nth-child(3):hover {
   transform: scale(1.05) rotateY(10deg) rotateX(-10deg);
-  box-shadow: 0 10px 20px rgba(0, 0, 255, 0.1), 0 20px 40px rgba(0, 0, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
+    0 16px 32px rgba(0, 0, 0, 0.3),
+    0 24px 48px rgba(0, 0, 0, 0.2);
 }
 
 .card:nth-child(4) {
-  background-image: url('Create\ an\ image\ representing\ LLMOps\ \(Large\ Language\ Model\ Operations\)\,\ which\ involves\ the\ management.jpeg');
+  background-image: url('Create\ an\ image\ of\ a\ person\ crafting\ a\ text\ prompt\,\ with\ thought\ bubbles\ showing\ refined\ versions\ of.jpeg');
   background-color: #1A181B;
 }
 
 .card:nth-child(4):hover {
   transform: scale(1.05) rotateY(-10deg) rotateX(-10deg);
-  box-shadow: 0 10px 20px rgba(255, 255, 0, 0.1), 0 20px 40px rgba(255, 255, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
+    0 16px 32px rgba(0, 0, 0, 0.3),
+    0 24px 48px rgba(0, 0, 0, 0.2);
 }
 
-
-footer {
+.card:nth-child(5) {
+  background-image: url('Create\ a\ split-screen\ image.\ On\ one\ side\,\ show\ a\ person\ typing\ on\ a\ keyboard.jpeg');
   background-color: #1A181B;
-  color: #ffffff;
+}
+
+.card:nth-child(5):hover {
+  transform: scale(1.05) rotateY(-10deg) rotateX(-10deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
+    0 16px 32px rgba(0, 0, 0, 0.3),
+    0 24px 48px rgba(0, 0, 0, 0.2);
+}
+
+.card:nth-child(6) {
+  background-image: url('Create an image representing LLMOps (Large Language Model Operations), which involves the management.jpeg');
+  background-color: #1A181B;
+}
+
+.card:nth-child(6):hover {
+  transform: scale(1.05) rotateY(-10deg) rotateX(-10deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
+    0 16px 32px rgba(0, 0, 0, 0.3),
+    0 24px 48px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff;
+  color: black;
   padding: 40px 20px;
+  font-family: "Libre Barcode 128 Text", system-ui;
+}
+
+footer #Copyright {
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: Outfit;
 }
 
 .footer-container {
@@ -317,44 +378,58 @@ footer {
 }
 
 .footer-logo {
-  max-width: 150px;
+  max-width: 400px;
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 1200px;
 }
 
-.footer-left,
-.footer-right {
+.footer-left {
   flex: 1;
   padding: 0 20px;
+  text-align: center;
 }
 
-.footer-left p,
-.footer-right p {
+.footer-left p {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 50px;
 }
 
-.footer-left ul,
-.footer-right ul {
-  list-style: none;
-  padding: 0;
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.footer-left ul li,
-.footer-right ul li {
-  margin-bottom: 10px;
+.social-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive styles */
+.social-icon img:hover {
+  transform: scale(1.4);
+}
+
+/* Responsive Styles */
 @media screen and (max-width: 1024px) {
+  #card-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+  }
+
   .header-container {
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 10px;
   }
 
@@ -366,13 +441,21 @@ footer {
     height: 40vh;
   }
 
-  .card {
-    width: 100%;
-    max-width: 80%;
+  .abtinfo p {
+    margin: 0 5%;
+    font-size: 3vw;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #card-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(100% - 20px);
+  }
+
   .header-container {
     padding: 10px;
   }
@@ -383,11 +466,6 @@ footer {
 
   #video-container {
     height: 30vh;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 80%;
   }
 
   .abtinfo p {
@@ -409,11 +487,6 @@ footer {
     height: 20vh;
   }
 
-  .card {
-    width: 100%;
-    max-width: 95%;
-  }
-
   .abttitle {
     font-size: 8vw;
     margin-top: -20px;
@@ -422,5 +495,14 @@ footer {
   .abtinfo p {
     margin: 0 5%;
     font-size: 4vw;
+  }
+
+  .footer-left {
+    padding: 0 10px;
+  }
+
+  .footer-left p {
+    font-size: 4vw;
+    margin-bottom: 0;
   }
 }
