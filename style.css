@@ -150,8 +150,10 @@ header {
   transition: all 1s cubic-bezier(.4, 0, .2, 1);
 }
 
-.abtinfo .row3 {
+.row3 {
   height: 27rem;
+  font-size: 1rem;
+  padding: 20px;
 }
 
 /* Card Container */
@@ -451,6 +453,15 @@ footer #Copyright {
     margin: 0 5%;
     font-size: 3vw;
   }
+
+  .row3 {
+    height: 40rem;
+    /* Adjust height for tablets */
+    font-size: 0.9rem;
+    /* Adjust font size for tablets */
+    padding: 15px;
+    /* Adjust padding for tablets */
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -477,6 +488,15 @@ footer #Copyright {
   .abtinfo p {
     margin: 0 5%;
     font-size: 3vw;
+  }
+
+  .row3 {
+    height: 48rem;
+    /* Adjust height for tablets */
+    font-size: 0.9rem;
+    /* Adjust font size for tablets */
+    padding: 15px;
+    /* Adjust padding for tablets */
   }
 }
 
@@ -506,10 +526,14 @@ footer #Copyright {
     font-size: 8vw;
   }
 
-  /* .abtinfo p {
-    margin: 0 5%;
-    font-size: 2vw;
-  } */
+  .row3 {
+    height: 20rem;
+    /* Adjust height for mobile devices */
+    font-size: 0.8rem;
+    /* Adjust font size for mobile devices */
+    padding: 10px;
+    /* Adjust padding for mobile devices */
+  }
 
   .abtinfo #row0 {
     margin-top: 2rem;
