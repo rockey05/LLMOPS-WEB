@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Libre+Barcode+128+Text&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  margin-top: 5rem;
+  margin-left: 4rem;
+  height: auto;
+  max-width: 90vw;
+  padding: 20px;
+  background-color: #343434;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #1a1a1a, 10px 10px 30px #000000;
+
+  background-image: url(unnamed\ \(2\).jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.main-heading {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-heading h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Layout Wrapper */
+.layout-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.default-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px #1a1a1a, 6px 6px 20px #000000;
+  margin-top: 15px;
+}
+
+/* Headings Section (Buttons on the Left) */
+.headings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 30%;
+}
+
+/* Buttons with Heading and Arrow */
+.heading-button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f9f9f9 50%, #272727 50%);
+  background-size: 200%;
+  background-position: right;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px #1a1a1a, 6px 6px 20px #000000;
+  /* 3D Drop Shadows */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-position 0.4s ease, transform 0.3s ease;
+}
+
+.heading-button:hover {
+  background-position: left;
+  transform: scale(1.05);
+  color: black;
+}
+
+.heading-button:active {
+  background-color: #ffffff;
+}
+
+.heading-button .arrow {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.heading-button:hover .arrow {
+  transform: translateX(5px);
+}
+
+.box {
+  width: 65%;
+}
+
+/* Box Content */
+.box-content {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px #1a1a1a, 6px 6px 20px #000000;
+  margin-top: 15px;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.box-content.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.box-content h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.box-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+footer {
+  width: 100%;
+  margin-top: 5rem;
+  background-color: #ffffff;
+  color: black;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Libre Barcode 128 Text", system-ui;
+}
+
+
+footer #Copyright {
+  /* margin-top: 30px; */
+  font-size: 18px;
+  font-family: Outfit;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25rem;
+}
+
+.footer-logo {
+  max-width: 400px;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-left {
+  flex: 1;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-left p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.4);
+}
