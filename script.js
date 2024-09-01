@@ -29,17 +29,5 @@ const triggerAnimations = () => {
   });
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Debouncing the animation trigger
-      if (!entry.target.animationTriggered) {
-        entry.target.animationTriggered = true;
-        triggerAnimations();
-      }
-      observer.disconnect(); // Stop observing after animation is triggered
-    }
-  });
-}, { threshold: 0.1 });
-
-observer.observe(document.querySelector('.content-container'));
+// Trigger animations immediately
+triggerAnimations();

@@ -175,23 +175,23 @@ header {
   overflow: hidden;
   position: relative;
   opacity: 0;
-  transform: translateY(50px) rotateX(90deg);
-  transition: transform 3s ease-out, opacity 1s ease-out;
-  animation: slideUp3D 1.5s ease-out forwards;
+  transform: scale(0.9);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  animation: fadeInScale 1s ease-out forwards;
   animation-delay: 0.5s;
   font-family: 'LemonMilk', Arial, Helvetica, sans-serif;
   margin: 10px;
 }
 
-@keyframes slideUp3D {
+@keyframes fadeInScale {
   from {
     opacity: 0;
-    transform: translateY(50px) rotateX(90deg);
+    transform: scale(0.9);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0) rotateX(0);
+    transform: scale(1);
   }
 }
 
@@ -284,10 +284,10 @@ header {
 .card:nth-child(1) {
   background-image: url('Firefly generative artificial intelligence 7699.jpg');
   background-color: #1A181B;
+  animation-delay: 0.3s;
 }
 
 .card:nth-child(1):hover {
-  transform: scale(1.05) rotateY(10deg) rotateX(10deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
     0 16px 32px rgba(0, 0, 0, 0.3),
     0 24px 48px rgba(0, 0, 0, 0.2);
@@ -296,10 +296,10 @@ header {
 .card:nth-child(2) {
   background-image: url('Firefly python programming developer code; computer network security concept; tablet display 29566.jpg');
   background-color: #1A181B;
+  animation-delay: 0.5s;
 }
 
 .card:nth-child(2):hover {
-  transform: scale(1.05) rotateY(-10deg) rotateX(10deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
     0 16px 32px rgba(0, 0, 0, 0.3),
     0 24px 48px rgba(0, 0, 0, 0.2);
@@ -308,10 +308,10 @@ header {
 .card:nth-child(3) {
   background-image: url('Firefly Global information tracker git 29566.jpg');
   background-color: #1A181B;
+  animation-delay: 0.7s;
 }
 
 .card:nth-child(3):hover {
-  transform: scale(1.05) rotateY(10deg) rotateX(-10deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
     0 16px 32px rgba(0, 0, 0, 0.3),
     0 24px 48px rgba(0, 0, 0, 0.2);
@@ -320,10 +320,10 @@ header {
 .card:nth-child(4) {
   background-image: url('Create\ an\ image\ of\ a\ person\ crafting\ a\ text\ prompt\,\ with\ thought\ bubbles\ showing\ refined\ versions\ of.jpeg');
   background-color: #1A181B;
+  animation-delay: 0.9s;
 }
 
 .card:nth-child(4):hover {
-  transform: scale(1.05) rotateY(-10deg) rotateX(-10deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
     0 16px 32px rgba(0, 0, 0, 0.3),
     0 24px 48px rgba(0, 0, 0, 0.2);
@@ -332,10 +332,10 @@ header {
 .card:nth-child(5) {
   background-image: url('Create\ a\ split-screen\ image.\ On\ one\ side\,\ show\ a\ person\ typing\ on\ a\ keyboard.jpeg');
   background-color: #1A181B;
+  animation-delay: 1.1s;
 }
 
 .card:nth-child(5):hover {
-  transform: scale(1.05) rotateY(-10deg) rotateX(-10deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
     0 16px 32px rgba(0, 0, 0, 0.3),
     0 24px 48px rgba(0, 0, 0, 0.2);
@@ -344,10 +344,10 @@ header {
 .card:nth-child(6) {
   background-image: url('Create an image representing LLMOps (Large Language Model Operations), which involves the management.jpeg');
   background-color: #1A181B;
+  animation-delay: 1.3s;
 }
 
 .card:nth-child(6):hover {
-  transform: scale(1.05) rotateY(-10deg) rotateX(-10deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5),
     0 16px 32px rgba(0, 0, 0, 0.3),
     0 24px 48px rgba(0, 0, 0, 0.2);
