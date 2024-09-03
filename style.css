@@ -118,7 +118,7 @@ header {
 }
 
 .abttitle p {
-  font-size: 5vw;
+  font-size: 4vw;
   font-family: 'LemonMilkBold', Arial, Helvetica, sans-serif;
 }
 
@@ -129,7 +129,7 @@ header {
 }
 
 #row1 {
-  font-size: 27px;
+  font-size: 23px;
 }
 
 .abtinfo p {
@@ -152,7 +152,7 @@ header {
 
 .row3 {
   height: 27rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 20px;
 }
 
@@ -457,7 +457,7 @@ footer #Copyright {
   .row3 {
     height: 40rem;
     /* Adjust height for tablets */
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     /* Adjust font size for tablets */
     padding: 15px;
     /* Adjust padding for tablets */
